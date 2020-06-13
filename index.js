@@ -91,7 +91,7 @@ let allWagesFor =  function () {
 
   let paid = matchedDates.reduce( (memo, d)=> {
     return memo + wagesEarnedOnDate.call(this,d);
-  }, 0);
+  }.bind(this), 0);
 
   return paid;
 };
