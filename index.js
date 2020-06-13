@@ -51,3 +51,14 @@ let createTimeInEvent = dateStamp=>{
 
     return this
 }
+let createTimeOutEvent = dateStamp=>{
+    let [date, hour] = dateStamp.split(' ')
+
+    this.timeOutEvents.push({
+        type: "TimeOut",
+        hour: parseInt(hour, 10),
+        date,
+    })
+
+    return this
+}
