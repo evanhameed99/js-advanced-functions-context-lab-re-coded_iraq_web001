@@ -40,3 +40,6 @@ function createEmployeeRecords (array){
     return createEmployeeRecord(obj);
   })
 }
+let createTimeInEvent = dateStamp=> {
+  
+} 
