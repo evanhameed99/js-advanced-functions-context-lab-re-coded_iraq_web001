@@ -90,7 +90,7 @@ let allWagesFor =  function (this) {
   });
 
   let paid = matchedDates.reduce( (memo, d)=> {
-    return memo + wagesEarnedOnDate(employee, d);
+    return memo + wagesEarnedOnDate.call(this,d);
   }, 0);
 
   return paid;
