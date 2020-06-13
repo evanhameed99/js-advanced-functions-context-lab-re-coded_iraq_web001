@@ -51,4 +51,3 @@ let createTimeInEvent = function(dateStamp){
 
     return this
 }
-
