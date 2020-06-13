@@ -20,6 +20,6 @@ let allWagesFor = function () {
 
     return payable
 }
-function createEmployeeRecord (){
+function createEmployeeRecord (array){
   
 }
