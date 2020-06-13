@@ -63,7 +63,7 @@ let createTimeOutEvent = function (dateStamp){
     return this
 }
 
-let hoursWorkedOnDate =  dateStamp=>{
+let hoursWorkedOnDate = function (dateStamp){
     let inEvent = this.timeInEvents.find(function(elem){
         return elem.date === dateStamp
     })
@@ -76,7 +76,7 @@ let hoursWorkedOnDate =  dateStamp=>{
 }
 
 
-let wagesEarnedOnDate = dateStamp => {
+let wagesEarnedOnDate = function (dateStamp)  {
   let hours = hoursWorkedOnDate.call(this,dateStamp);
   let wages = hours* this.payPerHour;
 
