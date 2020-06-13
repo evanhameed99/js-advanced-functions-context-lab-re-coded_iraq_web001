@@ -40,7 +40,7 @@ function createEmployeeRecords (array){
     return createEmployeeRecord(obj);
   })
 }
-let createTimeInEvent = function(dateStamp){
+let createTimeInEvent = dateStamp=>{
     let [date, hour] = dateStamp.split(' ')
 
     this.timeInEvents.push({
