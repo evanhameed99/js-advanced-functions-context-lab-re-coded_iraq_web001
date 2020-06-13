@@ -36,7 +36,7 @@ function createEmployeeRecord (array){
 }
 function createEmployeeRecords (array){
 
-   array.map(obj=>{
+   return array.map(obj=>{
     return createEmployeeRecord(obj);
   })
 }
