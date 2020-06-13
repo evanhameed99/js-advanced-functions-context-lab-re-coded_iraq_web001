@@ -45,7 +45,7 @@ let createTimeInEvent = dateStamp=> {
 
   this.timeInEvents.push({
     type : 'TimeIn',
-    hour: hour,
+    hour: parseInt(hour,10),
     date: date
   });
 }
