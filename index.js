@@ -34,3 +34,9 @@ function createEmployeeRecord (array){
   }
 
 }
+function createEmployeeRecords (array){
+
+  let mapped = array.map(obj=>{
+    return createEmployeeRecord(obj);
+  })
+}
