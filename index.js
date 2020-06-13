@@ -77,7 +77,7 @@ let hoursWorkedOnDate =  dateStamp=>{
 
 
 let wagesEarnedOnDate = dateStamp => {
-  let hours = hoursWorkedOnDate(dateStamp);
+  let hours = hoursWorkedOnDate.call(this,dateStamp);
   let wages = hours* this.payPerHour;
 
   return parseFloat(wages.toString())
