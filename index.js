@@ -84,7 +84,7 @@ let wagesEarnedOnDate = function (dateStamp)  {
 };
 
 
-let allWagesFor =  function (this) {
+let allWagesFor =  function () {
   let matchedDates = this.timeInEvents.map(function (elem) {
     return elem.date;
   });
